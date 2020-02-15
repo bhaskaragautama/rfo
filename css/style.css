@@ -1,0 +1,84 @@
+.calendar .col-2 {
+	padding: 1px;
+}
+
+.date .date-header {
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding: 3px 6px;
+}
+
+.date-number {
+	font-weight: bold;
+}
+
+.date .date-body {
+	border: 1px solid;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: 3px 6px;
+	height: 50px;
+	font-size: 10pt;
+}
+
+.date .date-symbol {
+	float: right;
+}
+
+.list {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.autumn .date .date-header,
+.autumn .date .date-body {
+	border-color: #AAEAB8;
+	background-color: #E2FFE9;
+}
+
+.autumn .date .date-header {
+	background-color: #CCFFD8;
+}
+
+.spring .date .date-header,
+.spring .date .date-body {
+	border-color: #E8EAAA;
+	background-color: #FFFFE2;
+}
+
+.spring .date .date-header {
+	background-color: #FEFFCC;
+}
+
+.summer .date .date-header,
+.summer .date .date-body {
+	border-color: #EABEAA;
+	background-color: #FFEAE2;
+}
+
+.summer .date .date-header {
+	background-color: #FFD9CC;
+}
+
+.winter .date .date-header,
+.winter .date .date-body {
+	border-color: #AAE9EA;
+	background-color: #E2FFFD;
+}
+
+.winter .date .date-header {
+	background-color: #CCFEFF;
+}
+
+.table-borderless td {
+	padding: 0 5px;
+}
+
+.modal-body table tr td {
+	border-radius: 5px;
+}

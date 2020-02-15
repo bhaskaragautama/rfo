@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RFToD - Calendar</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/date.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-lg-6 mt-3 mb-3">
+				<h2 class="text-center">SPRING</h2>
+				<div class="container-fluid season" data-season="Spring">
+					<div class="row calendar spring">
+						<script type="text/javascript">
+							for (var i = 1; i <= 30; i++) {
+								var bday = '';
+								var fest = '';
+								switch (i) {
+									case 1:
+										bday = [
+											['Mikoto','mikoto.png','Tempura Udon','Tempura Bowl, Fried, and Roasted Fish (Squid counts as \'fish\')','Knife Piece']
+										];
+										break;
+									case 3:
+										bday = [
+											['Sierra','sierra.png','Sun Pendant','Accessories','Salads'],
+											['Bismark','bismark.png','Seafood Pizza','Pizza, French Fries, Popcorn, Cornflakes','Insect Jaw']
+										];
+										break;
+									case 6:
+										bday = [
+											['Electra','electra.png','Teardrop','Crafting Materials, Flowers','Jewels, Gems']
+										];
+										break;
+									case 7:
+										fest = ['Cherry Blossom Festival','Celebrate Spring by watching the cherry blossom trees in full bloom.','At the Cherry Blossom Festival, after 9AM, you should be able to get Odette to make something for you. Go talk to Odette and she will say that she wants you to get an item from James, Bismark and Electra. After you\'ve retrieved the items and given them to Odette, you can get Fried Rice, Potato Salad, French Toast or Curry bread.'];
+										break;
+									case 13:
+										bday = [
+											['Sonja','sonja.png','Fruit Tart','Sweets','Wakame Seaweed']
+										];
+										break;
+									case 19:
+										fest = ['Fishing Contest','A Fishing Competition to decide who is the best fisherman on Fenith Island! It starts at 10 AM on Whitesand Beach.','Try to get the most points by fishing. You can\'t leave the island for this Festival. You have to talk to Bacchus at the beach before the festival to begin it. It goes from 10AM until 6PM. Whoever has the most points by the end of the festival will win. Points are calculated by the number of fish you\'ve caught, the rarity of the fish and the size of the fish. Catch plenty of fish during the time period, be sure to try the sea opening in the cave wall as well.'];
+										break;
+									case 24:
+										fest = ['Lantern Festival','Festival where lanterns are cast onto the sea. Originated from a legend about a man who calmed the sea.','The festival originates from a long time ago when the priest would float lanterns to calm the ocean during a storm. They say that if you write down your wish on a piece of paper and put it in the lantern before you float it, your wish will come true.<br><br>At 8 PM go down to the beach and talk to Violet. She will tell you how the custom originated and give you a lantern for you to write your wish on. Here are the choices (you only get 5 of these choices):<ul><li>I wish I was loved. (Makes your \'Friendly Neighbor\' level go up by one)</li><li>I want to eat more.</li><li>I want to sleep better.</li><li>I want to be rich. (Gold Ore 3x)</li><li>I wish I was healthier. (Poison Resist skill level goes up by one)</li><li>I wish I was stronger. (Go up a level)</li><li>I wish I could use weapons better. (A weapon skill chosen at random goes up by one)</li><li>I wish I was handier. (Crafting or Carpentry skill level goes up one)</li><li>I want to take over the world. (Crown 1x)</li><li>I want treasure!</li><li>I wish I was a better conversationalist. (Bathing skill level goes up one)</li><li>I wish I could use magic better.</li><li>I want to be friends with monsters. (Monster Care skill level increases)</li><li>I want to control the giant better.</li></ul>You will then set your lantern in the water and it will float away. The next day when you wake up you\'ll get a message saying something like \'your wish was granted!\' and something associated with your wish will be affected or an item will appear on the ground, depending on what your wish was.'];
+										break;
+									case 26:
+										bday = [
+											['Lily','lily.png','Fruit Parfait','Apple, Cherry, Orange','Baked Apple']
+										];
+										break;
+									case 27:
+										bday = [
+											['Candy','candy.png','Apple Pie','Juices','Insect Skin']
+										];
+										fest = ['Lucky Lotto','Play at the Church Plaza. You need to buy something from a store to get a ticket, though!','When you go shopping you will randomly receive a ticket, which can be used on the Lucky Lottery on the 27th of each month.<br><br>Go to the Church Plaza and speak to Beatrix next to the lotto wheel. Spinning the wheel will use one ticket, but you will always win a prize. The prize will depend on the number that you land on. Press A on the wheel when you want to stop, and you will land on a number (1 through 5). 1 is the highest valued prize, and 5 is the lowest.<br><br>Possible Prizes:<ul><li>Roll a 5: Bamboo Shoot or Iron</li><li>Roll a 4: Recovery Potion L</li><li>Roll a 3: A good quality Turnip Head</li><li>Roll a 2: Love Snapper</li><li>Roll a 1: Stinger Rage [Rank 3 Spear Ability]</li></ul>'];
+										break;
+								}
+								document.write(generateDate(i,bday,fest));
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-6 mt-3 mb-3">
+				<h2 class="text-center">SUMMER</h2>
+				<div class="container-fluid season" data-season="Summer">
+					<div class="row calendar summer">
+						<script type="text/javascript">
+							for (var i = 1; i <= 30; i++) {
+								var bday = '';
+								var fest = '';
+								switch (i) {
+									case 1:
+										fest = ['Miss Ferith Contest','Contest to decide who is most beautiful woman on Fenith Island. Who are you voting for?','On the first day of summer, after 10 AM, you will be able to go to the beach and judge the Miss Fenith Contest.<br><br>All the bachelorettes will be wearing their bathing suits and the bachelorette you vote for will automatically win. Talk to Gerard after 10 AM, and he will tell you where to submit your vote. Examine the ballot box and vote for your favorite bachelorette.<br><br>You can talk to any of the bachelorettes on the beach to see what they look like in their bathing suit. The girl you vote for will have an automatic increase in affection.'];
+										break;
+									case 3:
+										bday = [
+											['Bacchus','bacchus.png','Fried Fall Flounder','Pickles, Dried Sardine','Chocolate, Honey Toast']
+										];
+										break;
+									case 8:
+										bday = [
+											['Odette','odette.png','Ratatouille','Risottos, Pickles, Salads, Boiled Spinach, "Big" Crops','Failed Dish, Fish Fossil']
+										];
+										break;
+									case 12:
+										fest = ['Dragon Festival','Show your Gratitude to the Arch Dragon at the bonfire on the beach.','At 8 PM go down to the beach and talk to Odette. She will give you a fish dish.'];
+										break;
+									case 18:
+										fest = ['Warrior Festival','Show your warrior within in this festival dedicated to fighting.','After 10 AM, talk to Mikoto at the Church Plaza to begin the festival. She will give you the option of being a participant. If you choose to compete, there will be a mini game to complete.<br><br>There will be a grid-like pattern on the ground. Once you\'ve started, you can hit targets. King Targets are worth 51 Points, Plain Targets are worth 8 Points and Girl Targets take off 30 points if you hit them. The King targets will disappear after a few seconds, and you won\'t get new targets on the screen until you\'ve hit all of the Plain Targets. You have to bring your own weapon. First Place Reward: Aquamarine Ring.'];
+										break;
+									case 19:
+										fest = ['Fireworks Festival','A summer tradition. The night sky will be lit up with colorful fireworks.','If you fish at the hole in the cave facing the ocean during the day, you can see some fireworks go off that James was talking about. You can watch the fireworks down by the beach in the evening.<br><br><br><br>If you\'re standing on the beach at 3pm a small cut scene with some colored smoke (which should be fireworks) will happen.<br><br><br><br>After 6pm, Joe\'s stall will still be open and you\'ll be able to buy several monster drops from him such as hard horns, insect skins, toxin, magic powder, knife pieces, speckled skin, dark crystal, light crystal etc.<br><br><br><br>To watch fireworks with your husband/wife talk to them after 6pm.'];
+										break;
+									case 27:
+										fest = ['Lucky Lotto','Play at the Church Plaza. You need to buy something from a store to get a ticket, though!','When you go shopping you will randomly receive a ticket, which can be used on the Lucky Lottery on the 27th of each month.<br><br>Go to the Church Plaza and speak to Beatrix next to the lotto wheel. Spinning the wheel will use one ticket, but you will always win a prize. The prize will depend on the number that you land on. Press A on the wheel when you want to stop, and you will land on a number (1 through 5). 1 is the highest valued prize, and 5 is the lowest.<br><br>Possible Prizes:<ul><li>Roll a 5: Noel Flower</li><li>Roll a 4: Platinum</li><li>Roll a 3: Pumpkin Head</li><li>Roll a 2: Mixer Recipes (lvl 2) and then if you get it again Magic Crystal</li><li>Roll a 1: Dodge Strike [Rank 3 Katana Ability]</li></ul>'];
+										break;
+								}
+								document.write(generateDate(i,bday,fest));
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-6 mt-3 mb-3">
+				<h2 class="text-center">AUTUMN</h2>
+				<div class="container-fluid season" data-season="Autumn">
+					<div class="row calendar autumn">
+						<script type="text/javascript">
+							for (var i = 1; i <= 30; i++) {
+								var bday = '';
+								var fest = '';
+								switch (i) {
+									case 1:
+										fest = ['Masquerade','Walk around the island in costume to pay respect to the spirits.','Go talk to Electra and she will ask you to give a Pumpkin Pudding to Kelsey and Quinn. If you complete her request, you\'ll be able to get a mask for the festival. If you haven\'t gotten a mask, it\'s a good way to receive a free one to wear. This way, the villager won\'t get mad at you when you speak to them.<br><br>If you already have your own mask, you can wear that too. Mask options are:<ul><li>Elephant Mask</li><li>Turnip Head</li><li>Pumpkin Head</li><li>Fish Hat</li><li>Crown</li><li>Cat Ears</li><li>Bunny Ears</li></ul>'];
+										break;
+									case 3:
+										bday = [
+											['Gerard','gerard.png','Mixed Ole','Juice (except for the green one)','Grass Juice']
+										];
+										break;
+									case 6:
+										bday = [
+											['James','james.png','Chocolate Pudding','Milk Pudding, Cakes','Scrap Metal, Mushrooms']
+										];
+										break;
+									case 8:
+										bday = [
+											['Elena','elena.png','Small Crystal','Ores, Elemental Crystals','Milk, Hot Milk']
+										];
+										break;
+									case 12:
+										bday = [
+											['Tabatha','tabatha.png','Oatmeal','Apple, Porridge, Flour, Four-leaf Clover','Sashimi']
+										];
+										break;
+									case 13:
+										fest = ['Fashion Contest','Participate in the Fenith Island Fashion Contest. Who is the fashionista of Fenith Island?','Starting at 10 AM, you can talk to Electra to start the fashion contest. The judges are Bacchus, Gerard and Beatrix, and each of them judge differently depending on what fashion sense they prefer. Electra is the announcer and coordinator for the festival.<br><br>After the four contestants are finished the judges will add up the scores, there will be a short break before announcing the winner. After the winner is crowned, Gerard thanks everybody for competing, and the festival ends. You can find a random fashion accessory at the end of the cat walk.<br><br>It\'s recommended to wear accessories on all parts of the body for a better chance of winning. You will get bonus points if you wear a "starred" item as well as wearing items of the same set (such as wooly hat, wooly scarf, and wooly belt). A good strategy to win is to wear all the lvl 90+ items when you\'re competing, the reward is usually a gold pin.'];
+										break;
+									case 14:
+										bday = [
+											['Aden','aden.png','Sushi','Bamboo Rice, Mushroom Rice, Chestnut Rice, Rice Balls','Cold Medicine']
+										];
+										break;
+									case 24:
+										bday = [
+											['Kelsey','kelsey.png','Magic Ring','Toys','Green Pepper']
+										];
+										break;
+									case 25:
+										fest = ['Cooking Contest','Who is the best chef on Fenith Island? Are your culinary skills up to the test?','After 10 AM talk to Beatrix. She will ask if you want to participate. If you accept, then it will begin. You will have your own cooking station where you can prepare you food. You can cook the food ahead of time, or even hand in cooked dishes you got elsewhere. Here are some helpful tips that should help you:<ul><li>In the middle of where everyone is cooking there is a table. If you click on it, tons of free ingredients will fall out.</li><li>Every judge has a kind of food that they will rate higher for preference. Bacchus likes snack foods and hates sweets. Gerard likes juice, but not other types of food, and Beatrix likes everything.</li><li>Turn in some of the judges favorite dishes to get better scores, Bacchus likes Fried Fall Flounder and Tempura Bowl and Gerard likes Mixed Au Lait and Tomato Juice.</li><li>Odette is incredibly difficult to beat, its usually best to reset and try again if you get her as a contestant. Lily always loses with 0 points!</li></ul>'];
+										break;
+									case 27:
+										fest = ['Lucky Lotto','Play at the Church Plaza. You need to buy something from a store to get a ticket, though!','Possible Prizes:<ol><li>Rune Ability 3: Killer Quake (Axe/Hammer)</li><li>Light Crystal</li><li>Mask (Special Effect: Cold Resist 70%)</li><li>Royal Curry</li><li>Iron</li></ol>'];
+										break;
+								}
+								document.write(generateDate(i,bday,fest));
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-6 mt-3 mb-3">
+				<h2 class="text-center">WINTER</h2>
+				<div class="container-fluid season" data-season="Winter">
+					<div class="row calendar winter">
+						<script type="text/javascript">
+							for (var i = 1; i <= 30; i++) {
+								var bday = '';
+								var fest = '';
+								switch (i) {
+									case 1:
+										bday = [
+											['Maerwen','maerwen.png','Pom-Pom Flower','Flowers, Cloth, Leather','Spinach']
+										];
+										break;
+									case 3:
+										bday = [
+											['Violet','violet.png','Emery Flower','Flowers, Colored Grass, Medicinal Herb, Pickles','Insect Skin']
+										];
+										break;
+									case 4:
+										bday = [
+											['Anette','anette.png','Pumpkin Tart','Starwberries, Milk, Cherries, Chocolate Pudding, Curry Udon, Oranges, Boiled Egg, Chees Cake','Eggplant']
+										];
+										break;
+									case 6:
+										bday = [
+											['Quinn','quinn.png','Ultimate Curry','Ice Cream, Noodle, and Curry Dishes','Carrots']
+										];
+										break;
+									case 7:
+										fest = ['Snow Festival','A winter tradition. Make a giant snow sculpture!','At the Snow Festival you can talk to Lily to start the festival at 10 AM. Afterwards you should be able to find different sized snowballs in various places around town. After you find them give them to Lily and she will make an Arch-Dragon out of snow. The bigger the snowball the longer it will take to carry. You can collect them until 6 PM.<ul><li>1 medium at Lily\'s feet.</li><li>1 small one by the church bell.</li><li>5 by the pond where the game started (1 large. 2 medium, 2 small)</li><li>5 at the Dragon Shrine (1 medium, 4 small)</li><li>2 by the docks at Fenith Port</li><li>1 by the inn (Large)</li></ul>'];
+										break;
+									case 13:
+										bday = [
+											['Joe','joe.png','Protein Boost','Recovery Potion, Courage Badge','Cucumbers']
+										];
+										break;
+									case 14:
+										fest = ['Harmony Day','A day where you give chocolates to those you care about.','Everyone at 3 hearts or higher will give you a chocolate, or chocolate based item (Chocolate Pudding, Chocolate Cake, Chocolate Cookies, etc)<br><br>Giving villagers chocolate will increase their friendship levels.'];
+										break;
+									case 19:
+										bday = [
+											['Jocelyn','jocelyn.png','Golden Skull','Paintings, Lamps, Pottery, Chairs','Tomatoes']
+										];
+										break;
+									case 20:
+										bday = [
+											['Beatrix','beatrix.png','Magic Crystal','Foods','Glue']
+										];
+										break;
+									case 24:
+										bday = [
+											['Pandora','pandora.png','Rune Crystal','Gems, Medicinal Herb (Accept: Flowers, Fish, Plants, Crops, Ore)','Rosary']
+										];
+										break;
+									case 27:
+										fest = ['Lucky Lotto','Play at the Church Plaza. You need to buy something from a store to get a ticket, though!','Possible Prizes:<ol><li>Rune Ability 3 Fleet foot (Staff)</li><li>Dark Crystal</li><li>Hairband</li><li>Devil\'s Blood</li><li>Yarn Ball</li></ol>'];
+										break;
+									case 30:
+										fest = ['New Year\'s Eve','Reflect on the year gone by and look ahead to the new one with a countdown and fireworks!','There will be a countdown for the new year at the Church Plaza. It doesn\'t start until 12AM though, so feel free to explore during the day time. Remember that you cannot take requests on festivals, and regular shops won\'t be open. The Marketplace will still be open, however.<br><br>TIP: First, talk to every villager to get as much chocolate as possible. Decide who you want/need to give chocolate to, and then just re-gift the chocolate back to the characters.'];
+										break;
+								}
+								document.write(generateDate(i,bday,fest));
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="detail-label"></h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="birthday-container d-none">
+					<h4>Birthday</h4>
+					<table class="table table-bordered birthday-item"></table>
+				</div>
+				<div class="festival-container d-none">
+					<h4>Festival</h4>
+					<table class="table table-bordered">
+						<tr>
+							<td class="festival-item"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.date-body').click(function(event) {
+			if($(this).find('.list').length > 0){
+				$('#detail-label').html($(this).closest('.season').data('season')+', '+$(this).data('date'));
+				if($(this).find('.birthday').length > 0){
+					$('.birthday-container').removeClass('d-none');
+					elem = '';
+					$(this).find('.birthday').each(function(index, el) {
+						elem += '<tr><td class="text-center img-container" width="30%"><img src="img/'+$(this).data('img')+'" class="img-fluid"></td><td><table class="table-borderless" width="100%"><tr><td><h4><i class="fas fa-gift"></i> '+$(this).data('name')+'</h4></td></tr><tr><td class="font-weight-bolder">Favourite gifts:</td></tr><tr><td class="pl-4">'+$(this).data('loves')+'</td></tr><tr><td class="font-weight-bolder">Liked gifts:</td></tr><tr><td class="pl-4">'+$(this).data('likes')+'</td></tr><tr><td class="font-weight-bolder">Hated gifts:</td></tr><tr><td class="pl-4">'+$(this).data('hates')+'</td></tr></table></td></tr>';
+					});
+					$('.birthday-item').html(elem);
+				} else {
+					$('.birthday-container').addClass('d-none');
+				}
+				if($(this).find('.festival').length > 0){
+					$('.festival-container').removeClass('d-none');
+					that = $(this).find('.festival');
+					elem = '<h5 class="mb-4"><i class="fas fa-star"></i> '+that.data('name')+' <i class="fas fa-star"></i></h5><p style="font-weight:500;">'+that.data('highlight')+'</p><p align="justify">'+that.data('desc')+'</p>';
+					$('.festival-item').html(elem);
+				} else {
+					$('.festival-container').addClass('d-none');
+				}
+				$('#modal-detail').modal('show');
+			}
+		});
+	});
+</script>
